@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 source 'https://rubygems.org'
 
-gem "rake"
 ruby "2.6.5"
 
 gem "jekyll", "~> 4.1"
