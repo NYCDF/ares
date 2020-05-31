@@ -1,6 +1,10 @@
   {% if post.featured_image %}
   {%  if post.picwidth == 80 && post.position == "left" %}
   <img style="width: 80%; margin-left:70px;" class="img-responsive" src="{{ post.featured_image }}" title="{{ post.title }}">
+  {% elsif post.title == "Special thanks to" && post.position == "right" %}
+  <img style="margin-left:35px; margin-top:70px;" class="img-responsive" src="{{ post.featured_image }}" title="{{ post.title }}">
+  {% elsif post.title == "Pankl parts compatibility" %}
+  <img style="margin-left:35px; margin-top:70px;" class="img-responsive" src="{{ post.featured_image }}" title="{{ post.title }}">
     {% else %}
     <img class="img-responsive" style="margin-top: 70px;" src="{{ post.featured_image }}" title="{{ post.title }}">  
   {% endif %}
