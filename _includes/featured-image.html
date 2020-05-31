@@ -1,3 +1,7 @@
   {% if post.featured_image %}
-  <img class="img-responsive" src="{{ post.featured_image }}" title="{{ post.title }}">
+  {%  if post.picwidth == 80 && post.position == "left" %}
+  <img style="width: 80%; margin-left:70px;" class="img-responsive" src="{{ post.featured_image }}" title="{{ post.title }}">
+    {% else %}
+    <img class="img-responsive" style="margin-top: 70px;" src="{{ post.featured_image }}" title="{{ post.title }}">  
   {% endif %}
+{% endif %}

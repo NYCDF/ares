@@ -3,7 +3,10 @@
 
   <p class="excerpt">{{ post.lead_text }}</p>
 
-  <!-- make a post.description_image here and if else loop to see if there is an image to replace the words-->
+  <!-- make a post.description_image here and if else loop to see if there is an image to replace the words--> 
+  <div class="">
+    {% include description-image.html %}
+  </div>
 
   {% if post.project_link != empty %}
   <a href="{{ post.project_link }}" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-{{post.button_icon}} fa-lg"></i>{{post.button_text}}</button></a>
